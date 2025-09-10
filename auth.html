@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VideOS - Auth</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VideOS - Auth</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="auth-container">
-    <h2>Login</h2>
-    <input type="email" id="loginEmail" placeholder="Email">
-    <input type="password" id="loginPassword" placeholder="Password">
-    <button onclick="login()">Login</button>
+<div class="auth-container">
+  <h2>Login</h2>
+  <input type="email" id="loginEmail" placeholder="Email">
+  <input type="password" id="loginPassword" placeholder="Password">
+  <button id="loginBtn">Login</button>
 
-    <h2>Register</h2>
-    <input type="text" id="registerUsername" placeholder="Username">
-    <input type="email" id="registerEmail" placeholder="Email">
-    <input type="password" id="registerPassword" placeholder="Password">
-    <button onclick="register()">Register</button>
-  </div>
+  <hr>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/supabase.min.js"></script>
-  <script src="script.js"></script>
+  <h2>Register</h2>
+  <input type="text" id="registerUsername" placeholder="Username">
+  <input type="email" id="registerEmail" placeholder="Email">
+  <input type="password" id="registerPassword" placeholder="Password">
+  <button id="registerBtn">Register</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/supabase.min.js"></script>
+<script src="auth.js"></script>
 </body>
 </html>
